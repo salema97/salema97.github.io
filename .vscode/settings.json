@@ -1,0 +1,25 @@
+{
+	"cSpell.words": [
+		"astrojs",
+		"Codespaces",
+		"flowbite",
+		"fontsource",
+		"onest",
+		"Preact",
+		"tailwindcss",
+		"tsconfigs"
+	],
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
