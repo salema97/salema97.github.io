@@ -1,13 +1,16 @@
 ---
+import Badge from './Badge.astro'
+
 export interface Props {
 	date: string
 	title: string
 	role: string
 	description: string
+	skills?: string[]
 	link?: string
 }
 
-const { date, title, role, description, link } = Astro.props
+const { date, title, role, description, skills, link } = Astro.props
 ---
 
 <span
@@ -39,7 +42,17 @@ const { date, title, role, description, link } = Astro.props
 <p class="mb-4 text-pretty text-base font-normal text-gray-500 dark:text-gray-400">
 	{description}
 </p>
-
+{
+	skills && (
+		<ul class="mb-2 flex flex-row gap-x-4">
+			{skills.map((skills) => (
+				<li>
+					<Badge>{skills}</Badge>
+				</li>
+			))}
+		</ul>
+	)
+}
 {
 	link && (
 		<a
