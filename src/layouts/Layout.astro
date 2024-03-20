@@ -1,12 +1,11 @@
 ---
+import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 import "@fontsource-variable/onest";
-import Footer from "../components/Footer.astro";
-import "flowbite";
 
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { description, title } = Astro.props;
@@ -14,55 +13,55 @@ const { description, title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<script>
-			if (
-				localStorage.getItem("color-theme") === "dark" ||
-				(!("color-theme" in localStorage) &&
-					window.matchMedia("(prefers-color-scheme: dark)").matches)
-			) {
-				document.documentElement.classList.add("dark");
-			} else {
-				document.documentElement.classList.remove("dark");
-			}
-		</script>
-	</head>
-	<body class="relative text-black dark:text-white">
-		<div
-			class="absolute top-0 bottom-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-		>
-		</div>
-		<NavBar />
-		<slot />
-		<Footer />
-	</body>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
-	></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="relative text-black dark:text-white">
+    <div
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+    </div>
+    <NavBar />
+    <slot />
+    <Footer />
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+  ></script>
 </html>
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
-	html {
-		font-family: "Onest Variable", system-ui, sans-serif;
-	}
-	body {
-		color: rgba(17, 17, 17, 0.9);
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		scroll-behavior: smooth;
-	}
-	@media (prefers-reduced-motion: reduce) {
-		html {
-			scroll-behavior: auto;
-		}
-	}
+  :root {
+    color-scheme: light dark;
+  }
+  html {
+    font-family: "Onest Variable", system-ui, sans-serif;
+  }
+  body {
+    color: rgba(17, 17, 17, 0.9);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 </style>

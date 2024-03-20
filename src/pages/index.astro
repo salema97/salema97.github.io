@@ -1,73 +1,71 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-import LinkedInIcon from "../icons/LinkedIn.astro";
-import SocialPill from "../components/SocialPill.astro";
-import GitHubIcon from "../icons/GitHub.astro";
-import GmailIcon from "../icons/Gmail.astro";
 import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import SocialPill from "../components/SocialPill.astro";
 import BriefcaseIcon from "../icons/Briefcase.astro";
 import CodeIcon from "../icons/Code.astro";
-import Projects from "../components/Projects.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import GmailIcon from "../icons/Gmail.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-	title="Porfolio - Steven Lema Velásquez - Software Engineer & Full-Stack Developer"
-	description="Te contactare a la brevedad"
+  title="Porfolio - Steven Lema Velásquez - Software Engineer & Full-Stack Developer"
+  description="Te contactare a la brevedad"
 >
-	<main class="px-4">
-		<SectionContainer class="py-44 pb-32">
-			<h1
-				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
-			>
-				Hola, soy Steven
-				<a
-					href="https://www.linkedin.com/in/salema97"
-					target="_blank"
-					rel="noopener"
-					class="flex justify-center items-center"
-				>
-					<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-				<span class="text-red-500/90 font-semibold"
-					>Ingeniero de Software</span
-				>
-				con solidos conocimientos en el Desarrollo de Software, lo que me
-				permite <span class="text-sky-500/90 font-semibold"
-					>adquirir fácilmente nuevos conocimientos</span
-				> en Lenguajes, Frameworks y Herramientas de desarrollo.
-			</h2>
-			<nav class="flex gap-x-4 mt-8 flex-wrap">
-				<SocialPill href="https://www.linkedin.com/in/salema97">
-					<LinkedInIcon class="size-4 md:size-6" />
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/salema97">
-					<GitHubIcon class="size-4 md:size-6" />
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="mailto:salemavelasquez97@gmail.com">
-					<GmailIcon class="size-4 md:size-6" />
-					salemavelasquez97@gmail.com
-				</SocialPill>
-			</nav>
-		</SectionContainer>
-		<SectionContainer id="experience">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				<BriefcaseIcon class="size-7" />
-				Experiencia laboral
-			</h2>
-			<Experience />
-		</SectionContainer>
-		<SectionContainer id="proyects">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				<CodeIcon class="size-7" />
-				Proyectos
-			</h2>
-			<Projects />
-		</SectionContainer>
-	</main>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hola, soy Steven
+        <a
+          href="https://www.linkedin.com/in/salema97"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span class="text-red-500/90 font-semibold">Ingeniero de Software</span>
+        con solidos conocimientos en el Desarrollo de Software, lo que me permite
+        <span class="text-sky-500/90 font-semibold"
+          >adquirir fácilmente nuevos conocimientos</span
+        > en Lenguajes, Frameworks y Herramientas de desarrollo.
+      </h2>
+      <nav class="flex gap-x-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/salema97">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/salema97">
+          <GitHubIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="mailto:salemavelasquez97@gmail.com">
+          <GmailIcon class="size-4 md:size-6" />
+          salemavelasquez97@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+    <SectionContainer id="experience">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <BriefcaseIcon class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="proyects">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
 </Layout>
