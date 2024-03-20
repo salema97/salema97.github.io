@@ -1,47 +1,43 @@
 ---
-import Badge from "./Badge.astro";
+import Badge from './Badge.astro'
 
 const PROJECTS = [
-    {
-        title: "Personal Portfolio",
-        description:
-            "Personal Portfolio with Astro and Tailwind CSS for frontend and backend.",
-        link: "#",
-        github: "#",
-        image: "/projects/svgl.webp",
-        tags: ["Astro", "Tailwind CSS", "Github", "Netlify"],
-    },
-    {
-        title: "Personal",
-        description:
-            "Personal Portfolio with Astro and Tailwind CSS for frontend and backend.",
-        link: "#",
-        github: "#",
-        image: "/projects/svgl.webp",
-        tags: ["Astro", "Tailwind CSS", "Github", "Netlify"],
-    },
-];
+	{
+		title: 'Personal Portfolio',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: ['Astro', 'Tailwind CSS', 'Github', 'Netlify']
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: ['Astro', 'Tailwind CSS', 'Github', 'Netlify']
+	}
+]
 ---
 
 {
-    PROJECTS.map(({ title, description, link, github, image, tags }) => (
-        <article>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-yellow-200 mb-2">
-                {title}
-            </h3>
-            <p class="text-lg mb-4 text-pretty">{description}</p>
-            <ul class="flex gap-x-4 flex-row mb-2">
-                {tags.map((tag) => (
-                    <li>
-                        <Badge>{tag}</Badge>
-                    </li>
-                ))}
-            </ul>
-            <img
-                class="rounded shadow-2xl shadow-white/10"
-                src={image}
-                alt={`Captura de pantalla del proyecto ${title}`}
-            />
-        </article>
-    ))
+	PROJECTS.map(({ title, description, link, github, image, tags }) => (
+		<article>
+			<h3 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-yellow-200">{title}</h3>
+			<p class="mb-4 text-pretty text-lg">{description}</p>
+			<ul class="mb-2 flex flex-row gap-x-4">
+				{tags.map((tag) => (
+					<li>
+						<Badge>{tag}</Badge>
+					</li>
+				))}
+			</ul>
+			<img
+				class="rounded shadow-2xl shadow-white/10"
+				src={image}
+				alt={`Captura de pantalla del proyecto ${title}`}
+			/>
+		</article>
+	))
 }
