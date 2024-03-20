@@ -1,0 +1,85 @@
+---
+import AgeIcon from '../icons/Age.astro'
+import DegreeIcon from '../icons/Award.astro'
+import CalendarIcon from '../icons/Calendar.astro'
+import DownloadIcon from '../icons/Download.astro'
+import EmailIcon from '../icons/Email.astro'
+import InterestIcon from '../icons/Hearts.astro'
+import LocationIcon from '../icons/Location.astro'
+import PhoneIcon from '../icons/Phone.astro'
+import StudyIcon from '../icons/Study.astro'
+
+const ABOUTME = {
+	name: 'Steven Lema Velásquez',
+	description:
+		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+	birthday: '11/20/1997',
+	location: 'Cotopaxi - Ecuador',
+	study: 'Universidad de las Fuerzas Armadas - ESPE',
+	email: 'salemavelasquez97@gmail.com',
+	age: 0,
+	interests: ['Videojuegos', 'Lectura de novelas', 'Programación', 'Música'],
+	degree: 'Ingeniero de Software',
+	phone: '+593 988237106'
+}
+
+const birthDate = new Date(ABOUTME.birthday)
+const currentDate = new Date()
+let age = currentDate.getFullYear() - birthDate.getFullYear()
+const monthDiff = currentDate.getMonth() - birthDate.getMonth()
+if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDate.getDate())) {
+	age--
+}
+
+ABOUTME.age = age
+---
+
+<div class="flex text-lg">
+	<div class="grid grid-rows-2 justify-items-center pr-6">
+		<img
+			class="mb-2 rounded-lg p-1.5 ring-2 ring-gray-300 grayscale-0 filter transition-all duration-300 hover:grayscale dark:ring-blue-800"
+			src="http://github.com/salema97.png"
+			alt="Steven Lema Velásquez"
+		/>
+		<form method="get" action="/files/CV.pdf">
+			<button
+				class="ring-offset-background focus-visible:ring-ring hover:bg-primary/90 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-black px-4 py-2 text-sm font-medium text-white"
+				type="submit"
+			>
+				Descargar CV
+				<DownloadIcon class="ml-2 size-4" />
+			</button>
+		</form>
+	</div><div>
+		<h3 class="mb-4 text-3xl font-bold">Soy {ABOUTME.name}</h3><p class="mb-8">
+			{ABOUTME.description}
+		</p>
+		<ul class="mb-8 grid grid-cols-2 gap-x-4 gap-y-4 text-sm">
+			<li>
+				<CalendarIcon class="inline-block size-6" />
+				Fecha de nacimiento: {ABOUTME.birthday}
+			</li><li>
+				<AgeIcon class="inline-block size-6" />
+				Edad: {ABOUTME.age}
+			</li><li>
+				<LocationIcon class="inline-block size-6" />
+				Ubicación: {ABOUTME.location}
+			</li><li>
+				<InterestIcon class="inline-block size-6" />
+				Intereses: {ABOUTME.interests.join(', ')}
+			</li><li>
+				<StudyIcon class="inline-block size-6" />
+				Estudios: {ABOUTME.study}
+			</li><li>
+				<DegreeIcon class="inline-block size-6" />
+				Título: {ABOUTME.degree}
+			</li><li>
+				<EmailIcon class="inline-block size-6" />
+				E-mail: {ABOUTME.email}
+			</li><li>
+				<PhoneIcon class="inline-block size-6" />
+				Teléfono: {ABOUTME.phone}
+			</li>
+		</ul>
+	</div>
+</div>
