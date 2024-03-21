@@ -1,0 +1,117 @@
+---
+import Card from './Card.astro'
+import SliderControls from './SliderControls.astro'
+
+const DEGREES = [
+	{
+		id: 1,
+		name: 'Registro de título',
+		issued: 'SENESCYT',
+		issueDate: 'Noviembre 2023',
+		expirationDate: '',
+		credentialId: '1079-2023-2776775',
+		url: '',
+		description: 'Tecnologias de la Informacion y la Comunicacion (TIC).',
+		image: '/images/TITULO.webp',
+		skills: [
+			'Ingeniería de Software',
+			'Full-Stack Developer',
+			'Liderazgo',
+			'Trabajo en equipo',
+			'Programación',
+			'Metodologías ágiles'
+		]
+	},
+	{
+		id: 2,
+		name: 'Inglés nivel intermedio',
+		issued: 'Unidad de Admisión y Registro de la Universidad de las Fuerzas Armadas - ESPE',
+		issueDate: 'Marzo 2023',
+		expirationDate: '',
+		credentialId: 'PZSH0014',
+		url: '',
+		description: 'Equivalente al B1 del marco común europeo.',
+		image: '/images/CERTIFICADO_INGLES.webp',
+		skills: ['Inglés', 'B1', 'Nivel intermedio']
+	},
+	{
+		id: 3,
+		name: 'Elaboración de artículos científicos',
+		issued: 'Universidad de las Fuerzas Armadas - ESPE',
+		issueDate: 'Abril 2023',
+		expirationDate: '',
+		credentialId: 'CEC-2023-206',
+		url: '',
+		description:
+			'Por haber aprobado el Seminario/Taller: “Elaboración de artículos científicos”, evento académico realizado por la Institución, con una duración de 80 horas.',
+		image: '/images/CERTIFICADO_TALLER ELAB. ARTICULOS.webp',
+		skills: ['Lectura de artículos científicos', 'Redacción de artículos científicos']
+	},
+	{
+		id: 4,
+		name: 'Ingeniería de Software',
+		issued: 'HackerRank',
+		issueDate: 'Marzo 2024',
+		expirationDate: '',
+		credentialId: 'DE3FAF7F6F67',
+		url: 'https://www.hackerrank.com/certificates/de3faf7f6f67',
+		description: 'Abarca temas como Resolución de problemas, SQL y API REST.',
+		image: '/images/SOFTWARE_ENGINEER.webp',
+		skills: ['SQL', 'API REST']
+	},
+	{
+		id: 5,
+		name: 'CSS (Básico)',
+		issued: 'HackerRank',
+		issueDate: 'Marzo 2024',
+		expirationDate: '',
+		credentialId: 'E659EE967953',
+		url: 'https://www.hackerrank.com/certificates/e659ee967953',
+		description:
+			'Abarca temas como la exploración de Cascada y Herencia, la exploración de los fundamentos del estilizado de texto, la comprensión del uso de diseños en CSS, la comprensión del encajonado de elementos en CSS, entre otros.',
+		image: '/images/CSS.webp',
+		skills: ['CSS']
+	},
+	{
+		id: 6,
+		name: 'C# (Básico)',
+		issued: 'HackerRank',
+		issueDate: 'Marzo 2024',
+		expirationDate: '',
+		credentialId: '03CAE47D240B',
+		url: 'https://www.hackerrank.com/certificates/03cae47d240b',
+		description:
+			'Esta área de competencia incluye la comprensión de la estructura de los programas C#, tipos y Variables, POO básica, Propiedades e Indexadores, Colecciones, Manejo de Excepciones, entre otros.',
+		image: '/images/C_SHARP.webp',
+		skills: ['C#', 'POO']
+	}
+]
+---
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+	<!-- Carousel wrapper -->
+	<div class="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
+		{
+			DEGREES.map((degrees) => (
+				<div class="hidden duration-700 ease-in-out" data-carousel-item>
+					<Card {...degrees} />
+				</div>
+			))
+		}
+	</div>
+	<!-- Slider indicators -->
+	<div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
+		{
+			DEGREES.map(({ id }) => (
+				<button
+					type="button"
+					class="h-3 w-3 rounded-full"
+					aria-current={id - 1 === 0 ? 'true' : 'false'}
+					aria-label={`Slide ${id}`}
+					data-carousel-slide-to={`Slide ${id - 1}`}
+				/>
+			))
+		}
+	</div>
+	<SliderControls />
+</div>
