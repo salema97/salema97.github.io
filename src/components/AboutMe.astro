@@ -12,13 +12,13 @@ import StudyIcon from '../icons/Study.astro'
 const ABOUTME = {
 	name: 'Steven Lema Velásquez',
 	description:
-		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+		'💻| Aunque soy un programador Full-Stack, mi pasión reside especialmente en el Back-End. Sin embargo, esto no me limita en absoluto para desenvolverme en otras áreas del desarrollo.\n🩵| Mi pasión por el Software me impulsa a seguir desarrollando mis habilidades y a mantenerme al día con las últimas tecnologías. Estoy comprometido con ofrecer soluciones innovadoras y de alta calidad en cada proyecto en el que participo.\n✨| ¡Me encantaría colaborar contigo para llevar tus ideas al siguiente nivel!',
 	birthday: '11/20/1997',
 	location: 'Cotopaxi - Ecuador',
 	study: 'Universidad de las Fuerzas Armadas - ESPE',
 	email: 'salemavelasquez97@gmail.com',
 	age: 0,
-	interests: ['Videojuegos', 'Lectura de novelas', 'Programación', 'Música'],
+	interests: ['Lectura', 'Programación', 'Música', 'Videojuegos'],
 	degree: 'Ingeniero de Software',
 	phone: '+593 988237106'
 }
@@ -34,52 +34,60 @@ if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDate.getDa
 ABOUTME.age = age
 ---
 
-<div class="flex text-lg">
-	<div class="grid grid-rows-2 justify-items-center pr-6">
-		<img
-			class="mb-2 rounded-lg p-1.5 ring-2 ring-gray-300 grayscale-0 filter transition-all duration-300 hover:grayscale dark:ring-blue-800"
-			src="http://github.com/salema97.png"
-			alt="Steven Lema Velásquez"
-		/>
-		<form method="get" action="/files/CV.pdf">
-			<button
-				class="ring-offset-background focus-visible:ring-ring hover:bg-primary/90 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-black px-4 py-2 text-sm font-medium text-white"
-				type="submit"
-			>
-				Descargar CV
-				<DownloadIcon class="ml-2 size-4" />
-			</button>
-		</form>
-	</div><div>
-		<h3 class="mb-4 text-3xl font-bold">Soy {ABOUTME.name}</h3><p class="mb-8">
-			{ABOUTME.description}
-		</p>
-		<ul class="mb-8 grid grid-cols-2 gap-x-4 gap-y-4 text-sm">
-			<li>
-				<CalendarIcon class="inline-block size-6" />
-				Fecha de nacimiento: {ABOUTME.birthday}
-			</li><li>
-				<AgeIcon class="inline-block size-6" />
-				Edad: {ABOUTME.age}
-			</li><li>
-				<LocationIcon class="inline-block size-6" />
-				Ubicación: {ABOUTME.location}
-			</li><li>
-				<InterestIcon class="inline-block size-6" />
-				Intereses: {ABOUTME.interests.join(', ')}
-			</li><li>
-				<StudyIcon class="inline-block size-6" />
-				Estudios: {ABOUTME.study}
-			</li><li>
-				<DegreeIcon class="inline-block size-6" />
-				Título: {ABOUTME.degree}
-			</li><li>
-				<EmailIcon class="inline-block size-6" />
-				E-mail: {ABOUTME.email}
-			</li><li>
-				<PhoneIcon class="inline-block size-6" />
-				Teléfono: {ABOUTME.phone}
-			</li>
-		</ul>
+<div class="container mx-auto">
+	<div class="mb-4 flex flex-wrap">
+		<div class="flex w-full flex-col items-center p-4 md:w-1/4 lg:w-1/4 xl:w-1/4">
+			<img
+				class="mb-2 rounded-lg p-1.5 ring-2 ring-gray-300 grayscale-0 filter transition-all duration-300 hover:grayscale dark:ring-blue-800"
+				src="http://github.com/salema97.png"
+				alt="Steven Lema Velásquez"
+			/>
+			<form method="get" action="/files/CV.pdf">
+				<button
+					class="ring-offset-background focus-visible:ring-ring hover:bg-primary/90 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-black px-4 py-2 text-sm font-medium text-white"
+					type="submit"
+				>
+					Descargar CV
+					<DownloadIcon class="ml-2 size-4" />
+				</button>
+			</form>
+		</div>
+
+		<div class="w-full p-4 text-sm md:w-3/4 lg:w-3/4 xl:w-3/4">
+			<h3 class="mb-4 text-3xl font-bold">Soy {ABOUTME.name}</h3>
+			{ABOUTME.description.split('\n').map((paragraph) => <p class="mb-4">{paragraph}</p>)}
+		</div>
+	</div>
+
+	<div class="flex flex-wrap">
+		<div class="w-full p-4">
+			<ul class="mb-8 grid grid-cols-2 gap-x-4 gap-y-4 text-sm">
+				<li>
+					<CalendarIcon class="inline-block size-6" />
+					Fecha de nacimiento: {ABOUTME.birthday}
+				</li><li>
+					<AgeIcon class="inline-block size-6" />
+					Edad: {ABOUTME.age}
+				</li><li>
+					<LocationIcon class="inline-block size-6" />
+					Ubicación: {ABOUTME.location}
+				</li><li>
+					<InterestIcon class="inline-block size-6" />
+					Intereses: {ABOUTME.interests.join(', ')}
+				</li><li>
+					<StudyIcon class="inline-block size-6" />
+					Estudios: {ABOUTME.study}
+				</li><li>
+					<DegreeIcon class="inline-block size-6" />
+					Título: {ABOUTME.degree}
+				</li><li>
+					<EmailIcon class="inline-block size-6" />
+					Correo: {ABOUTME.email}
+				</li><li>
+					<PhoneIcon class="inline-block size-6" />
+					Teléfono: {ABOUTME.phone}
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
