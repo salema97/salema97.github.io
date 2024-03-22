@@ -7,3 +7,16 @@
 >
 	<slot />
 </a>
+
+<script is:inline>
+	document.querySelectorAll('a[href]').forEach((anchor) => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			let target = document.getElementById(this.getAttribute('href'))
+			if (target) {
+				target.scrollIntoView()
+			}
+		})
+	})
+</script>
