@@ -1,8 +1,39 @@
 ---
+import MenuIcon from '../icons/Menu.astro'
+import HoverLink from './HoverLink.astro'
 import Languages from './Languages.astro'
 ---
 
-<header
+<nav
+	class="fixed start-0 top-0 z-50 w-full border-b border-gray-200 bg-white bg-fixed shadow-md shadow-black/10 dark:border-gray-600 dark:bg-gray-900"
+>
+	<div class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between p-4">
+		<img src="http://github.com/salema97.png" class="h-12 rounded-full" alt="Profile photo" />
+		<button
+			data-collapse-toggle="mega-menu-full"
+			type="button"
+			class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+			aria-controls="mega-menu-full"
+			aria-expanded="false"
+		>
+			<MenuIcon />
+		</button>
+		<div
+			id="mega-menu-full"
+			class="mt-4 hidden w-full flex-col items-center justify-between font-medium md:order-1 md:mt-0 md:flex md:w-auto md:flex-row md:space-x-8 rtl:space-x-reverse"
+		>
+			<HoverLink href="#">Inicio</HoverLink>
+			<HoverLink href="#experience">Experiencia</HoverLink>
+			<HoverLink href="#degree">Títulos y Certificaciones</HoverLink>
+			<HoverLink href="#projects">Proyectos</HoverLink>
+			<HoverLink href="#about">Acerca de mí</HoverLink>
+			<HoverLink href="#contact">Contacto</HoverLink>
+			<Languages class="opacity-80" />
+		</div>
+	</div>
+</nav>
+
+<!-- <header
 	class="fixed left-0 right-0 start-0 top-0 z-50 mx-auto flex w-full items-center justify-between border-b py-4 xl:w-[1120px]"
 >
 	<img class="size-10 rounded-full" src="http://github.com/salema97.png" alt="Profile photo" />
@@ -87,4 +118,4 @@ import Languages from './Languages.astro'
 			}
 		}
 	})
-</script>
+</script> -->
