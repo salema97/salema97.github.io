@@ -1,0 +1,30 @@
+---
+import Badge from './Badge.astro'
+---
+
+<div class="grid grid-flow-col grid-rows-3 items-center gap-4">
+	<img
+		src="http://github.com/salema97.png"
+		class="h-30 row-span-3 rounded-full ring-2 ring-gray-300"
+		alt="Profile photo"
+	/>
+	<h1
+		class="col-span-2 flex flex-row gap-x-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl"
+	>
+		Hola, soy Steven
+		<a
+			href="https://www.linkedin.com/in/salema97"
+			target="_blank"
+			rel="noopener"
+			class="flex items-center justify-center"
+		>
+			<Badge>Disponible para trabajar</Badge>
+		</a>
+	</h1>
+	<h2 class="col-span-2 row-span-2 text-wrap text-xl lg:text-2xl">
+		<span class="font-semibold text-red-500/90">Ingeniero de Software</span>
+		con sólidos conocimientos en el Desarrollo de Software, lo que me permite
+		<span class="font-semibold text-sky-500/90">adquirir fácilmente nuevos conocimientos</span> en Lenguajes,
+		Frameworks y Herramientas de desarrollo.
+	</h2>
+</div>

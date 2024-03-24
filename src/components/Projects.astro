@@ -1,5 +1,5 @@
 ---
-import Badge from './Badge.astro'
+import ProjectCard from './ProjectCard.astro'
 
 const PROJECTS = [
 	{
@@ -21,7 +21,32 @@ const PROJECTS = [
 ]
 ---
 
-{
+<section id="projects" class="flex flex-col items-center justify-center">
+	<span class="bg-orange h-1 w-10"></span>
+	<div class="flex w-full flex-col flex-wrap items-center md:flex-row">
+		{
+			PROJECTS.map((project) => (
+				<ProjectCard
+					url={project.link}
+					title={project.title}
+					description={project.description}
+					alt={project.image}
+					tags={project.tags}
+				/>
+			))
+		}
+	</div>
+	<a
+		href="https://github.com/"
+		target="_blank"
+		rel="noopener"
+		class="hover:text-orange dark:hover:text-orange flex flex-row text-black dark:text-white"
+		aria-label="link to repository"
+	>
+	</a>
+</section>
+
+<!-- {
 	PROJECTS.map(({ title, description, link, github, image, tags }) => (
 		<article>
 			<h3 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-yellow-200">{title}</h3>
@@ -40,4 +65,4 @@ const PROJECTS = [
 			/>
 		</article>
 	))
-}
+} -->

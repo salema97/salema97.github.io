@@ -1,5 +1,5 @@
 ---
-import Card from './Card.astro'
+import DegreeCard from './DegreeCard.astro'
 import SliderControls from './SliderControls.astro'
 
 const DEGREES = [
@@ -94,7 +94,7 @@ const DEGREES = [
 		{
 			DEGREES.map((degrees) => (
 				<div class="hidden duration-700 ease-in-out" data-carousel-item>
-					<Card {...degrees} />
+					<DegreeCard {...degrees} />
 				</div>
 			))
 		}
@@ -106,7 +106,7 @@ const DEGREES = [
 				<button
 					type="button"
 					class="h-3 w-3 rounded-full"
-					aria-current={id - 1 === 0 ? 'true' : 'false'}
+					aria-current={id === 1 ? 'true' : 'false'}
 					aria-label={`Slide ${id}`}
 					data-carousel-slide-to={`Slide ${id - 1}`}
 				/>

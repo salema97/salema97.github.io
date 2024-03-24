@@ -2,10 +2,10 @@
 import AgeIcon from '../icons/Age.astro'
 import DegreeIcon from '../icons/Award.astro'
 import CalendarIcon from '../icons/Calendar.astro'
-import DownloadIcon from '../icons/Download.astro'
 import InterestIcon from '../icons/Hearts.astro'
 import LocationIcon from '../icons/Location.astro'
 import StudyIcon from '../icons/Study.astro'
+import CVButton from './CVButton.astro'
 
 const ABOUTME = {
 	name: 'Steven Lema Velásquez',
@@ -40,15 +40,7 @@ ABOUTME.age = age
 				src="http://github.com/salema97.png"
 				alt="Steven Lema Velásquez"
 			/>
-			<form method="get" action="/files/CV.pdf">
-				<button
-					class="ring-offset-background focus-visible:ring-ring hover:bg-primary/90 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-black px-4 py-2 text-sm font-medium text-white"
-					type="submit"
-				>
-					Descargar CV
-					<DownloadIcon class="ml-2 size-4" />
-				</button>
-			</form>
+			<CVButton />
 		</div>
 
 		<div class="w-full p-4 text-sm md:w-3/4 lg:w-3/4 xl:w-3/4">

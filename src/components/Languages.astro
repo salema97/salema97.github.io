@@ -1,5 +1,5 @@
 ---
-import ItalyFlag from '../icons/ItalyFlag.astro'
+import LanguageIcon from '../icons/Language.astro'
 import SpainFlag from '../icons/SpainFlag.astro'
 import USFlag from '../icons/USFlag.astro'
 import LanguageItem from './LanguageItem.astro'
@@ -13,8 +13,7 @@ const { class: className, id } = Astro.props
 		data-dropdown-toggle="language-dropdown-menu"
 		class="inline-flex cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
 	>
-		Español
-		<SpainFlag class="ml-2 size-4" />
+		<LanguageIcon class="size-5" />
 	</button>
 	<!-- Dropdown -->
 	<div
@@ -29,10 +28,6 @@ const { class: className, id } = Astro.props
 			<LanguageItem class="inline-flex items-center">
 				English (US)
 				<USFlag class="ml-2 size-4" />
-			</LanguageItem>
-			<LanguageItem class="inline-flex items-center">
-				Italiano
-				<ItalyFlag class="ml-2 size-4" />
 			</LanguageItem>
 		</ul>
 	</div>
