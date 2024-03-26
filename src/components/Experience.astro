@@ -1,5 +1,6 @@
 ---
 import ExperienceItem from './ExperienceItem.astro'
+import { TAGS } from './Tags.ts'
 
 const EXPERIENCE = [
 	{
@@ -8,7 +9,7 @@ const EXPERIENCE = [
 		role: 'Desarrollador de Software',
 		description:
 			'Mi experiencia laboral se centró en el diseño y desarrollo de Dynamic Link Libraries (DLLs) con el objetivo de facilitar la migración de sistemas heredados basados en Visual FoxPro hacia la plataforma moderna de Firebase.',
-		skills: ['C#', 'Visual FoxPro', 'Firebase', 'APIs', 'Desarrollo de aplicaciones de escritorio']
+		tags: [TAGS.CSHARP, TAGS.FOXPRO, TAGS.FIREBASE, TAGS.APIS, TAGS.DESKTOP]
 	},
 	{
 		date: 'Diciembre 2021 - Febrero 2022',
@@ -16,7 +17,7 @@ const EXPERIENCE = [
 		role: 'Desarrollador de Software',
 		description:
 			'Participe en el Proyecto Social titulado (Asistencia Técnica para el Fortalecimiento de Emprendimientos de Personas Refugiadas, Solicitantes de Asilo y Personas de Interés de ACNUR en Pichincha y Santo Domingo de los Tsáchilas) en colaboración con ACNUR-HIAS-ESPE. En este proyecto, destinado a la población en movilidad humana, desempeñé el seguimiento, mantenimiento y desarrollo de la página web de Prowessec.',
-		skills: ['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Desarrollo de aplicaciones web']
+		tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.SQL, TAGS.PHP, TAGS.WEB]
 	}
 ]
 ---

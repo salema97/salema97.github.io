@@ -7,11 +7,14 @@ export interface Props {
 	title: string
 	role: string
 	description: string
-	skills?: string[]
+	tags?: {
+		name: string
+		color: string
+	}[]
 	link?: string
 }
 
-const { date, title, role, description, skills, link } = Astro.props
+const { date, title, role, description, tags, link } = Astro.props
 ---
 
 <span
@@ -34,11 +37,11 @@ const { date, title, role, description, skills, link } = Astro.props
 	{description}
 </p>
 {
-	skills && (
+	tags && (
 		<ul class="mb-2 flex flex-wrap gap-x-4">
-			{skills.map((skills) => (
+			{tags.map((tags) => (
 				<li>
-					<Badge>{skills}</Badge>
+					<Badge color={tags.color}>{tags.name}</Badge>
 				</li>
 			))}
 		</ul>

@@ -13,12 +13,9 @@ import SunIcon from '../icons/Sun.astro'
 </button>
 
 <script is:inline>
-	document.documentElement.classList.toggle(
-		'dark',
-		localStorage.getItem('color-theme') === 'dark' ||
-			(!localStorage.getItem('color-theme') &&
-				window.matchMedia('(prefers-color-scheme: dark)').matches)
-	)
+	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+	const isDarkModeSet = localStorage.getItem('color-theme') === 'dark'
+	document.documentElement.classList.toggle('dark', isDarkModeSet || prefersDarkMode)
 
 	const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon')
 	const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon')

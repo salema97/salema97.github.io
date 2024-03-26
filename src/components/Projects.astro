@@ -1,5 +1,6 @@
 ---
 import ProjectCard from './ProjectCard.astro'
+import { TAGS } from './Tags.ts'
 
 const PROJECTS = [
 	{
@@ -8,7 +9,7 @@ const PROJECTS = [
 		link: '#',
 		github: '#',
 		image: '/projects/svgl.webp',
-		tags: ['Astro', 'Tailwind CSS', 'GitHub', 'Netlify']
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
 	},
 	{
 		title: 'Personal',
@@ -16,7 +17,7 @@ const PROJECTS = [
 		link: '#',
 		github: '#',
 		image: '/projects/svgl.webp',
-		tags: ['Astro', 'Tailwind CSS', 'GitHub', 'Netlify']
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
 	}
 ]
 ---
