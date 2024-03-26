@@ -11,10 +11,10 @@ export interface Props {
 	description: string
 	url?: string
 	image: string
-	skills?: string[]
+	tags?: { name: string; color: string }[]
 }
 
-const { name, issued, issueDate, expirationDate, credentialId, description, url, image, skills } =
+const { name, issued, issueDate, expirationDate, credentialId, description, url, image, tags } =
 	Astro.props
 ---
 
@@ -51,11 +51,11 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 				Código de Credencial: {credentialId}
 			</p>
 			{
-				skills && (
+				tags && (
 					<ul class="mb-2 flex flex-wrap">
-						{skills.map((skills) => (
+						{tags.map((tags) => (
 							<li>
-								<Badge>{skills}</Badge>
+								<Badge color={tags.color}>{tags.name}</Badge>
 							</li>
 						))}
 					</ul>

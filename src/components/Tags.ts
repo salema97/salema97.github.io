@@ -59,8 +59,20 @@ export const TAGS = {
 		name: 'Desarrollo de aplicaciones móviles',
 		color: 'blue'
 	},
-	FOXPRO: {
+	FOX_PRO: {
 		name: 'Visual FoxPro',
 		color: 'orange'
+	},
+	POO: {
+		name: 'Programación orientada a objetos',
+		color: 'blue'
+	},
+	READING_ARTICLES: {
+		name: 'Lectura de artículos científicos',
+		color: 'green'
+	},
+	WRITING_ARTICLES: {
+		name: 'Redacción de artículos científicos',
+		color: 'green'
 	}
 }
