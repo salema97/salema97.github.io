@@ -4,39 +4,39 @@ import SliderControls from './SliderControls.astro'
 import { TAGS } from './Tags'
 
 const DEGREES = [
-	// {
-	// 	id: 1,
-	// 	name: 'Registro de título',
-	// 	issued: 'SENESCYT',
-	// 	issueDate: 'Noviembre 2023',
-	// 	expirationDate: '',
-	// 	credentialId: '1079-2023-2776775',
-	// 	url: '',
-	// 	description: 'Tecnologías de la Información y la Comunicación (TIC).',
-	// 	image: '/images/TITULO.webp',
-	// 	skills: [
-	// 		'Ingeniería de Software',
-	// 		'Full-Stack Developer',
-	// 		'Liderazgo',
-	// 		'Trabajo en equipo',
-	// 		'Programación',
-	// 		'Metodologías ágiles'
-	// 	]
-	// },
-	// {
-	// 	id: 2,
-	// 	name: 'Inglés nivel intermedio',
-	// 	issued: 'Unidad de Admisión y Registro de la Universidad de las Fuerzas Armadas - ESPE',
-	// 	issueDate: 'Marzo 2023',
-	// 	expirationDate: '',
-	// 	credentialId: 'PZSH0014',
-	// 	url: '',
-	// 	description: 'Equivalente al B1 del marco común europeo.',
-	// 	image: '/images/CERTIFICADO_INGLES.webp',
-	// 	skills: ['Inglés', 'B1', 'Nivel intermedio']
-	// },
 	{
 		id: 1,
+		name: 'Registro de título de "Ingeniero de Software"',
+		issued: 'SENESCYT',
+		issueDate: 'Noviembre 2023',
+		expirationDate: '',
+		credentialId: '1079-2023-2776775',
+		url: '',
+		description: 'Tecnologías de la Información y la Comunicación (TIC).',
+		image: '/images/TITULO.webp',
+		tags: [
+			TAGS.SOFTWARE_ENGINEER,
+			TAGS.FULL_STACK,
+			TAGS.LEADERSHIP,
+			TAGS.TEAMWORK,
+			TAGS.PROGRAMMING,
+			TAGS.AGILE_METHODOLOGIES
+		]
+	},
+	{
+		id: 2,
+		name: 'Nivel Intermedio de Inglés',
+		issued: 'Unidad de Admisión y Registro de la Universidad de las Fuerzas Armadas - ESPE',
+		issueDate: 'Marzo 2023',
+		expirationDate: '',
+		credentialId: 'PZSH0014',
+		url: '',
+		description: 'Equivalente al B1 del marco común europeo.',
+		image: '/images/CERTIFICADO_INGLES.webp',
+		tags: [TAGS.ENGLISH, TAGS.B1, TAGS.INTERMEDIATE_LEVEL]
+	},
+	{
+		id: 3,
 		name: 'Elaboración de artículos científicos',
 		issued: 'Universidad de las Fuerzas Armadas - ESPE',
 		issueDate: 'Abril 2023',
@@ -46,10 +46,10 @@ const DEGREES = [
 		description:
 			'Por haber aprobado el Seminario/Taller: “Elaboración de artículos científicos”, evento académico realizado por la Institución, con una duración de 80 horas.',
 		image: '/images/CERTIFICADO_TALLER.webp',
-		skills: [TAGS.READING_ARTICLES, TAGS.WRITING_ARTICLES]
+		tags: [TAGS.READING_ARTICLES, TAGS.WRITING_ARTICLES]
 	},
 	{
-		id: 2,
+		id: 4,
 		name: 'Ingeniería de Software',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
@@ -58,10 +58,10 @@ const DEGREES = [
 		url: 'https://www.hackerrank.com/certificates/de3faf7f6f67',
 		description: 'Abarca temas como Resolución de problemas, SQL y API REST.',
 		image: '/images/SOFTWARE_ENGINEER.webp',
-		skills: [TAGS.SQL, TAGS.APIS]
+		tags: [TAGS.SQL, TAGS.API_REST]
 	},
 	{
-		id: 3,
+		id: 4,
 		name: 'CSS (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
@@ -71,10 +71,10 @@ const DEGREES = [
 		description:
 			'Abarca temas como la exploración de Cascada y Herencia, la exploración de los fundamentos del estilizado de texto, la comprensión del uso de diseños en CSS, la comprensión del encajonado de elementos en CSS, entre otros.',
 		image: '/images/CSS.webp',
-		skills: [TAGS.CSS]
+		tags: [TAGS.CSS]
 	},
 	{
-		id: 4,
+		id: 6,
 		name: 'C# (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
@@ -84,7 +84,7 @@ const DEGREES = [
 		description:
 			'Esta área de competencia incluye la comprensión de la estructura de los programas C#, tipos y Variables, POO básica, Propiedades e Indexadores, Colecciones, Manejo de Excepciones, entre otros.',
 		image: '/images/C_SHARP.webp',
-		skills: [TAGS.CSHARP, TAGS.POO]
+		tags: [TAGS.CSHARP, TAGS.POO]
 	}
 ]
 ---
