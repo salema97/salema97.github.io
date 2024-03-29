@@ -1,5 +1,6 @@
 ---
 import { TAGS } from './Tags.ts'
+import ProjectsGallery from './js/ProjectsGallery.jsx'
 
 const PROJECTS = [
 	{
@@ -19,60 +20,21 @@ const PROJECTS = [
 		tags: [TAGS.ASTRO, TAGS.TAILWIND]
 	}
 ]
+
+const imageUrls = [
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg',
+	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg'
+]
 ---
 
-<div class="grid grid-cols-2 gap-4 md:grid-cols-3">
-	<div class="grid gap-4" id="column1">
-		<!-- Aquí se generarán dinámicamente las imágenes de la columna 1 -->
-	</div>
-	<div class="grid gap-4" id="column2">
-		<!-- Aquí se generarán dinámicamente las imágenes de la columna 2 -->
-	</div>
-	<div class="grid gap-4" id="column3">
-		<!-- Aquí se generarán dinámicamente las imágenes de la columna 3 -->
-	</div>
-</div>
-
-<script is:inline>
-	// URLs de las imágenes
-	const imageUrls = [
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg',
-		'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg'
-	]
-
-	// Obtener los contenedores de las columnas
-	const column1 = document.getElementById('column1')
-	const column2 = document.getElementById('column2')
-	const column3 = document.getElementById('column3')
-
-	// Calcular la cantidad de imágenes por columna
-	const imagesPerColumn = Math.ceil(imageUrls.length / 3)
-
-	// Iterar sobre las URLs de las imágenes y distribuirlas en las columnas
-	imageUrls.forEach((url, index) => {
-		const div = document.createElement('div')
-		const img = document.createElement('img')
-		img.setAttribute('src', url)
-		img.classList.add('h-auto', 'max-w-full', 'rounded-lg', 'object-cover')
-		div.appendChild(img)
-
-		// Distribuir la imagen en la columna correspondiente
-		if (index < imagesPerColumn) {
-			column1.appendChild(div)
-		} else if (index < 2 * imagesPerColumn) {
-			column2.appendChild(div)
-		} else {
-			column3.appendChild(div)
-		}
-	})
-</script>
+<ProjectsGallery client:only="preact" imageUrls={imageUrls} />
 
 <!-- <section id="projects" class="flex flex-col items-center justify-center">
 	<span class="bg-orange h-1 w-10"></span>
