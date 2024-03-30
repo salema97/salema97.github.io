@@ -6,6 +6,86 @@ const PROJECTS = [
 	{
 		title: 'Personal Portfolio',
 		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
+		link: '#',
+		github: '#',
+		image: '/projects/svgl.webp',
+		tags: [TAGS.ASTRO, TAGS.TAILWIND]
+	},
+	{
+		title: 'Personal',
+		description: 'Personal Portfolio with Astro and Tailwind CSS for frontend and backend.',
 		link: '#',
 		github: '#',
 		image: '/projects/svgl.webp',
@@ -20,64 +100,6 @@ const PROJECTS = [
 		tags: [TAGS.ASTRO, TAGS.TAILWIND]
 	}
 ]
-
-const imageUrls = [
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg',
-	'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg'
-]
 ---
 
-<ProjectsGallery client:only="preact" imageUrls={imageUrls} />
-
-<!-- <section id="projects" class="flex flex-col items-center justify-center">
-	<span class="bg-orange h-1 w-10"></span>
-	<div class="flex w-full flex-col flex-wrap items-center md:flex-row">
-		{
-			PROJECTS.map((project) => (
-				<ProjectCard
-					url={project.link}
-					title={project.title}
-					description={project.description}
-					alt={project.image}
-					tags={project.tags}
-				/>
-			))
-		}
-	</div>
-	<a
-		href="https://github.com/"
-		target="_blank"
-		rel="noopener"
-		class="hover:text-orange dark:hover:text-orange flex flex-row text-black dark:text-white"
-		aria-label="link to repository"
-	>
-	</a>
-</section> -->
-
-<!-- {
-	PROJECTS.map(({ title, description, link, github, image, tags }) => (
-		<article>
-			<h3 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-yellow-200">{title}</h3>
-			<p class="mb-4 text-pretty text-lg">{description}</p>
-			<ul class="mb-2 flex flex-row gap-x-4">
-				{tags.map((tag) => (
-					<li>
-						<Badge>{tag}</Badge>
-					</li>
-				))}
-			</ul>
-			<img
-				class="rounded shadow-2xl shadow-white/10"
-				src={image}
-				alt={`Captura de pantalla del proyecto ${title}`}
-			/>
-		</article>
-	))
-} -->
+<ProjectsGallery client:only="preact" PROJECTS={PROJECTS} />
