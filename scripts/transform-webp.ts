@@ -34,6 +34,6 @@ function resizeAndConvertToWebP(
 
 const inputFolderPath: string = './scripts/src/images/'
 const outputFolderPath: string = './public/images'
-const targetWidth: number = 854 // Ancho deseado, ajusta según tu necesidad
+const targetWidth: number = 1000 // Ancho deseado, ajusta según tu necesidad
 
-resizeAndConvertToWebP(inputFolderPath, outputFolderPath, targetWidth, 60)
+resizeAndConvertToWebP(inputFolderPath, outputFolderPath, targetWidth, 70)
