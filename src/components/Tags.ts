@@ -215,5 +215,57 @@ export const TAGS = {
 	AGILE_METHODOLOGIES: {
 		name: 'Metodologías ágiles',
 		color: COLORS.YELLOW.color
+	},
+	SPRING_BOOT: {
+		name: 'Spring Boot',
+		color: COLORS.GREEN.color
+	},
+	ANGULAR: {
+		name: 'Angular',
+		color: COLORS.RED.color
+	},
+	NODE: {
+		name: 'Node',
+		color: COLORS.GREEN.color
+	},
+	WEB_SCRAPING: {
+		name: 'Web Scraping',
+		color: COLORS.BLUE.color
+	},
+	PYTHON: {
+		name: 'Python',
+		color: COLORS.YELLOW.color
+	},
+	SECURITY: {
+		name: 'Seguridad',
+		color: COLORS.RED.color
+	},
+	AI: {
+		name: 'Inteligencia artificial',
+		color: COLORS.GREEN.color
+	},
+	YOLO: {
+		name: 'YOLO',
+		color: COLORS.ORANGE.color
+	},
+	THESIS: {
+		name: 'Tesis',
+		color: COLORS.PURPLE.color
+	},
+	FLUTTER: {
+		name: 'Flutter',
+		color: COLORS.BLUE.color
+	},
+	DART: {
+		name: 'Dart',
+		color: COLORS.SKY.color
+	},
+	ANDROID: {
+		name: 'Android',
+		color: COLORS.GREEN.color
+	},
+	FIRESTORE: {
+		name: 'Firestore',
+		color: COLORS.BLUE.color
 	}
 }

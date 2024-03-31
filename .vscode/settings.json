@@ -3,10 +3,12 @@
 		"ABOUTME",
 		"ACNUR",
 		"astrojs",
+		"biométricas",
 		"Codespaces",
 		"ESPE",
 		"evenodd",
 		"fira",
+		"FIRESTORE",
 		"flowbite",
 		"fontsource",
 		"github",
@@ -30,14 +32,17 @@
 		"PZSH",
 		"Redimensionar",
 		"rgba",
+		"SCAFEL",
 		"SENESCYT",
+		"softbiométricas",
 		"svgl",
 		"tabler",
 		"tailwindcss",
 		"Tsáchilas",
 		"tsconfigs",
 		"twemoji",
-		"webp"
+		"webp",
+		"YOLO"
 	],
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
