@@ -19,7 +19,7 @@ function ProjectsCard(props) {
 
 				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
 				{tags && (
-					<ul class="flex flex-wrap">
+					<ul class="flex flex-wrap gap-x-2 gap-y-2">
 						{tags.map((tags) => (
 							<li>
 								<Badge TAGS={tags} />

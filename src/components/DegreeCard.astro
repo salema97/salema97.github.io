@@ -52,7 +52,7 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 			</p>
 			{
 				tags && (
-					<ul class="mb-2 flex flex-wrap">
+					<ul class="mb-2 flex flex-wrap gap-x-2 gap-y-2">
 						{tags.map((tags) => (
 							<li>
 								<Badge color={tags.color}>{tags.name}</Badge>

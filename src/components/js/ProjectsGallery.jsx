@@ -16,27 +16,27 @@ function ProjectsGallery({ PROJECTS }) {
 		}
 	}, [])
 
-	const imagesPerRow = windowWidth < 768 ? 2 : 3
+	const imagesPerRow = windowWidth < 768 ? 1 : windowWidth < 1024 ? 2 : 3
 	const imagesPerColumn = Math.ceil(PROJECTS.length / imagesPerRow)
 
 	return (
-		<div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+		<div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 			{/* Columna 1 */}
-			<div class="grid gap-4" id="column1">
+			<div class="grid justify-center gap-4" id="column1">
 				{PROJECTS.slice(0, imagesPerColumn).map((projects) => (
 					<ProjectsCard PROJECTS={projects} />
 				))}
 			</div>
 
 			{/* Columna 2 */}
-			<div class="grid gap-4" id="column2">
+			<div class="grid justify-center gap-4" id="column2">
 				{PROJECTS.slice(imagesPerColumn, 2 * imagesPerColumn).map((projects) => (
 					<ProjectsCard PROJECTS={projects} />
 				))}
 			</div>
 
 			{/* Columna 3 */}
-			<div class="grid gap-4" id="column3">
+			<div class="grid justify-center gap-4" id="column3">
 				{PROJECTS.slice(2 * imagesPerColumn, 3 * imagesPerColumn).map((projects) => (
 					<ProjectsCard PROJECTS={projects} />
 				))}

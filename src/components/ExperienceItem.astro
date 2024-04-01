@@ -38,7 +38,7 @@ const { date, title, role, description, tags, link } = Astro.props
 </p>
 {
 	tags && (
-		<ul class="mb-2 flex flex-wrap gap-x-4">
+		<ul class="mb-2 flex flex-wrap gap-x-2 gap-y-2">
 			{tags.map((tags) => (
 				<li>
 					<Badge color={tags.color}>{tags.name}</Badge>
