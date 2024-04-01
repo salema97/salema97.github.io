@@ -6,7 +6,7 @@ function ProjectsCard(props) {
 	const { title, description, link, github, image, tags } = props.PROJECTS
 
 	return (
-		<div class="grid max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+		<div class="grid rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
 			<img
 				class="h-full w-auto rounded-t-lg border-b border-gray-200 object-cover align-top dark:border-gray-600"
 				src={image}
