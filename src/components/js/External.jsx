@@ -1,11 +1,20 @@
 function IconExternal(props) {
 	return (
-		<svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" {...props}>
-			<path
-				fill="currentColor"
-				d="M15.64 7.025h-3.622v-2h7v7h-2v-3.55l-4.914 4.914-1.414-1.414 4.95-4.95z"
-			/>
-			<path fill="currentColor" d="M10.982 6.975h-6v12h12v-6h-2v4h-8v-8h4v-2z" />
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			fill="none"
+			stroke="currentColor"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="2"
+			class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"
+			viewBox="0 0 24 24"
+			{...props}
+		>
+			<path stroke="none" d="M0 0h24v24H0z" />
+			<path d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6M11 13l9-9M15 4h5v5" />
 		</svg>
 	)
 }

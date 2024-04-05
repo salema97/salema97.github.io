@@ -37,9 +37,9 @@ function ProjectsCard(props) {
 							class="flex items-center space-x-1 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
 						>
 							<span class="mt-1 flex items-center justify-center text-sm font-medium">
-								Saber más
+								Saber más..
 							</span>
-							<ExternalIcon class="size-6 opacity-50" />
+							<ExternalIcon class="size-6 opacity-80" />
 						</a>
 					)}
 				</div>
@@ -49,7 +49,7 @@ function ProjectsCard(props) {
 					target="_blank"
 					class="flex items-center space-x-1 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
 				>
-					<GitHubIcon class="size-6 opacity-50" />
+					<GitHubIcon class="size-6 opacity-80" />
 					<span class="mt-1 flex items-center justify-center text-sm font-medium">GitHub</span>
 				</a>
 			</div>
