@@ -8,12 +8,12 @@ function ProjectsCard(props) {
 	return (
 		<div class="grid rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
 			<img
-				class="h-[fill-available] rounded-t-lg border-b border-gray-200 object-cover align-top dark:border-gray-600"
+				class="h-[stretch] rounded-t-lg border-b border-gray-200 object-cover align-top dark:border-gray-600"
 				src={image}
 				alt=""
 			/>
 			<div class="self-baseline p-4">
-				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+				<h5 class="text-1gray-900 mb-2 text-2xl font-bold tracking-tight dark:text-white">
 					{title}
 				</h5>
 
