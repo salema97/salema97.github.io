@@ -8,16 +8,18 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'dark-primary': '#0f2e43',
-				'dark-secondary': '#124256',
-				'dark-tertiary': '#185d6d',
-				'dark-quaternary': '#1d7e86',
-				'dark-quinary': '#23aca1',
-				'light-primary': '#005e9f',
-				'light-secondary': '#0c91c5',
-				'light-tertiary': '#78d0f3',
-				'light-quaternary': '#ccffff',
-				'light-quinary': '#ffffff'
+				'dark-1': '#032030',
+				'dark-2': '#022B42',
+				'dark-3': '#003554',
+				'dark-4': '#004D74',
+				'dark-5': '#006494',
+				'dark-6': '#006DA4',
+				'light-1': '#F0F3FA',
+				'light-2': '#D5DEEF',
+				'light-3': '#B1C9EF',
+				'light-4': '#8AAEE0',
+				'light-5': '#638ECB',
+				'light-6': '#395886'
 			}
 		}
 	},

@@ -2,16 +2,14 @@
 import Badge from './Badge.astro'
 ---
 
-<div class="grid grid-rows-3 items-center gap-8 md:grid-flow-col">
+<div class="grid grid-rows-3 items-center gap-8 p-4 md:grid-flow-col">
 	<img
-		class="col-span-2 row-span-3 flex size-48 max-w-48 flex-row justify-self-center rounded-full object-cover ring-2 ring-gray-300"
+		class="col-span-2 row-span-3 flex size-48 max-w-48 flex-row justify-self-center rounded-full object-cover shadow-lg ring-2 ring-dark-4/60 dark:shadow-dark-4/60 dark:ring-dark-4/60"
 		src="/images/PHOTO.webp"
-		alt="Profile picture"
+		alt=""
 		decoding="async"
 	/>
-	<h1
-		class="col-span-2 flex flex-row gap-x-4 text-2xl font-bold text-white md:text-4xl lg:text-5xl"
-	>
+	<h1 class="col-span-2 flex flex-row gap-x-4 text-2xl font-bold md:text-4xl lg:text-5xl">
 		👋 Hola, soy Steven
 		<a
 			class="flex items-center justify-center"
@@ -22,7 +20,7 @@ import Badge from './Badge.astro'
 			<Badge>Buscando trabajo</Badge>
 		</a>
 	</h1>
-	<h2 class="col-span-2 row-span-2 text-wrap md:text-xl lg:text-2xl">
+	<h2 class="col-span-2 row-span-2 md:text-xl lg:text-2xl">
 		<span class="font-semibold text-red-500/90">Ingeniero de Software</span>
 		con sólidos conocimientos en el Desarrollo de Software, lo que me permite
 		<span class="font-semibold text-sky-500/90">adquirir fácilmente nuevos conocimientos</span> en Lenguajes,
