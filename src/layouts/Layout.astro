@@ -23,7 +23,8 @@ const { description, title } = Astro.props
 	</head>
 	<body class="relative text-black dark:text-white">
 		<div
-			class="fixed inset-0 -z-10 flex h-screen w-screen items-center justify-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#FFF_40%,#638ECB_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#022B42_100%)]"
+			id="background"
+			class="fixed inset-0 -z-20 flex h-screen w-screen items-center justify-center px-5 py-24 blur-sm [background:radial-gradient(125%_125%_at_50%_10%,#FFF_40%,#638ECB_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#022B42_100%)]"
 		>
 		</div>
 		<NavBar />
@@ -31,6 +32,8 @@ const { description, title } = Astro.props
 		<Footer />
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 </html>
 <style is:global>
 	:root {
@@ -52,3 +55,20 @@ const { description, title } = Astro.props
 		}
 	}
 </style>
+
+<script type="module">
+	VANTA.GLOBE({
+		el: '#background',
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 200.0,
+		minWidth: 200.0,
+		scale: 1.0,
+		scaleMobile: 1.0,
+		size: 2.0,
+		color: 0x32030,
+		color2: 0xffffff,
+		backgroundAlpha: 0
+	})
+</script>
