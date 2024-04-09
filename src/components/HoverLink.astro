@@ -3,20 +3,7 @@
 	data-accordion-target="#mega-menu-full"
 	aria-expanded="false"
 	aria-controls="mega-menu-full"
-	class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:font-bold md:dark:hover:text-dark-6"
+	class="scroll-to-anchor block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:font-bold md:dark:hover:text-dark-6"
 >
 	<slot />
 </a>
-
-<script is:inline>
-	document.querySelectorAll('a[href]').forEach((anchor) => {
-		anchor.addEventListener('click', function (e) {
-			e.preventDefault()
-
-			let target = document.getElementById(this.getAttribute('href'))
-			if (target) {
-				target.scrollIntoView()
-			}
-		})
-	})
-</script>

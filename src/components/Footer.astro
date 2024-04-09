@@ -19,7 +19,9 @@ const year = new Date().getFullYear()
 			class="mt-0 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400"
 		>
 			<li>
-				<HoverLink href="about" class="me-4 dark:hover:text-dark-6">Acerca de mí</HoverLink>
+				<HoverLink href="about" class="scroll-to-anchor me-4 dark:hover:text-dark-6"
+					>Acerca de mí</HoverLink
+				>
 			</li>
 			<li>
 				<Contact href="mailto:salemavelasquez97@gmail.com" class="dark:hover:text-dark-6"
@@ -29,3 +31,16 @@ const year = new Date().getFullYear()
 		</ul>
 	</div>
 </footer>
+
+<script is:inline>
+	document.querySelectorAll('.scroll-to-anchor').forEach((anchor) => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			let target = document.getElementById(this.getAttribute('href'))
+			if (target) {
+				target.scrollIntoView()
+			}
+		})
+	})
+</script>
