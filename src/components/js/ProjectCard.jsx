@@ -11,6 +11,8 @@ function ProjectsCard(props) {
 				class="h-[stretch] rounded-t-lg border-b border-gray-200 object-cover align-top dark:border-dark-2"
 				src={image}
 				alt=""
+				loading="lazy"
+				decoding="async"
 			/>
 			<div class="self-baseline p-4">
 				<h5 class="text-1gray-900 mb-2 text-2xl font-bold tracking-tight dark:text-white">
