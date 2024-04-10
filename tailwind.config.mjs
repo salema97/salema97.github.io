@@ -20,6 +20,9 @@ module.exports = {
 				'light-4': '#8AAEE0',
 				'light-5': '#638ECB',
 				'light-6': '#395886'
+			},
+			screens: {
+				nv: '900px'
 			}
 		}
 	},

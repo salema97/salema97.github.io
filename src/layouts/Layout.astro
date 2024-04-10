@@ -1,7 +1,7 @@
 ---
+import '@fontsource/fira-sans-condensed'
 import Footer from '../components/Footer.astro'
 import NavBar from '../components/NavBar.astro'
-import '@fontsource/fira-sans-condensed'
 
 interface Props {
 	title: string
@@ -30,7 +30,7 @@ const { description, title } = Astro.props
 		<slot />
 		<Footer />
 	</body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+	<script src="flowbite/dist/flowbite.min.js"></script>
 </html>
 <style is:global>
 	:root {
