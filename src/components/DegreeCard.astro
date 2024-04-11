@@ -21,11 +21,11 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 
 <div class="h-full w-full">
 	<div
-		class="flex h-full flex-col rounded-lg border border-gray-200 bg-light-1 shadow dark:border-gray-700 dark:bg-dark-1 md:flex-row"
+		class="flex h-full flex-col rounded-lg border border-light-3 bg-light-1 shadow dark:border-dark-2 dark:bg-dark-1 md:flex-row"
 	>
 		<div class="h-[500px] overflow-hidden md:h-full md:w-2/5">
 			<img
-				class="h-full w-full object-cover object-top md:rounded-l-lg"
+				class="h-full w-full border border-b-light-3 object-cover object-top dark:border-b-dark-2 md:rounded-l-lg md:border-r-light-3 md:dark:border-r-dark-2"
 				src={image}
 				alt=""
 				loading="lazy"
@@ -36,19 +36,19 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 				{name}
 			</h5>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+			<p class="mb-3 font-normal text-gray-800 dark:text-gray-200">
 				{issued}
 			</p>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-300">
 				{description}
 			</p>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Emitido: {issueDate}</p>
+			<p class="mb-3 font-normal text-gray-600 dark:text-gray-400">Emitido: {issueDate}</p>
 			{
 				expirationDate && (
-					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Caduca: {expirationDate}</p>
+					<p class="mb-3 font-normal text-gray-600 dark:text-gray-400">Caduca: {expirationDate}</p>
 				)
 			}
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+			<p class="mb-3 font-normal text-gray-600 dark:text-gray-400">
 				Código de Credencial: {credentialId}
 			</p>
 			{
