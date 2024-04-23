@@ -83,6 +83,58 @@ export const DEGREES = [
 	},
 	{
 		id: 5,
+		name: 'Angular (Intermedio)',
+		issued: 'HackerRank',
+		issueDate: 'Abril 2024',
+		expirationDate: '',
+		credentialId: '82D2A78EE957',
+		url: 'https://www.hackerrank.com/certificates/82d2a78ee957',
+		description:
+			'Abarca temas como Routing, NgModules, Observables para transmisión de datos y manejo de eventos, Inyecciones de Dependencia y APIs.',
+		image: '/images/ANGULAR.webp',
+		tags: [TAGS.ANGULAR]
+	},
+	{
+		id: 6,
+		name: 'JavaScript (Intermedio)',
+		issued: 'HackerRank',
+		issueDate: 'Abril 2024',
+		expirationDate: '',
+		credentialId: '8B05437ED77E',
+		url: 'https://www.hackerrank.com/certificates/8b05437ed77e',
+		description:
+			'Abarca temas como patrones de diseño, gestión de memoria, modelo de concurrencia y bucles de eventos, entre otros.',
+		image: '/images/JAVASCRIPT.webp',
+		tags: [TAGS.JAVASCRIPT]
+	},
+	{
+		id: 7,
+		name: 'Node (básico)',
+		issued: 'HackerRank',
+		issueDate: 'Abril 2024',
+		expirationDate: '',
+		credentialId: 'B665979B48A9',
+		url: 'https://www.hackerrank.com/certificates/b665979b48a9',
+		description:
+			'Abarca temas como Gestión de Paquetes y Módulos, Callbacks, Bucle de Eventos, Emisor de Eventos, Buffers, Streams y Sistemas de Archivos.',
+		image: '/images/NODE.webp',
+		tags: [TAGS.NODE]
+	},
+	{
+		id: 8,
+		name: 'Python (Básico)',
+		issued: 'HackerRank',
+		issueDate: 'Abril 2024',
+		expirationDate: '',
+		credentialId: 'F32CAF197F02',
+		url: 'https://www.hackerrank.com/certificates/f32caf197f02',
+		description:
+			'Abarca temas como Tipos Escalares, Operadores y Flujo de Control, Cadenas, Colecciones e Iteración, Modularidad, Objetos y Tipos y Clases.',
+		image: '/images/PYTHON.webp',
+		tags: [TAGS.PYTHON]
+	},
+	{
+		id: 9,
 		name: 'CSS (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
@@ -95,7 +147,7 @@ export const DEGREES = [
 		tags: [TAGS.CSS]
 	},
 	{
-		id: 6,
+		id: 10,
 		name: 'C# (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
