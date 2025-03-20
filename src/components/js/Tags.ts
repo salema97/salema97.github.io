@@ -1,3 +1,48 @@
+import {
+	FaBookReader,
+	FaBrain,
+	FaCode,
+	FaDatabase,
+	FaDesktop,
+	FaFire,
+	FaFirefox,
+	FaGlobe,
+	FaGraduationCap,
+	FaJava,
+	FaLanguage,
+	FaLightbulb,
+	FaMobile,
+	FaPencilAlt,
+	FaPuzzlePiece,
+	FaShieldAlt,
+	FaUserGraduate,
+	FaUsers
+} from 'react-icons/fa'
+import { GrWorkshop } from 'react-icons/gr'
+import {
+	SiAndroid,
+	SiAngular,
+	SiApple,
+	SiAstro,
+	SiCss3,
+	SiDart,
+	SiFirebase,
+	SiFlutter,
+	SiHtml5,
+	SiJavascript,
+	SiMysql,
+	SiNodedotjs,
+	SiPhp,
+	SiPostgresql,
+	SiPython,
+	SiReact,
+	SiSharp,
+	SiSpringboot,
+	SiTailwindcss,
+	SiTypescript,
+	SiVite
+} from 'react-icons/si'
+
 const COLORS = {
 	SLATE: {
 		color: 'bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-300'
@@ -70,202 +115,277 @@ const COLORS = {
 export const TAGS = {
 	ASTRO: {
 		name: 'Astro',
-		color: COLORS.ORANGE.color
+		color: COLORS.ORANGE.color,
+		icon: SiAstro
 	},
 	TAILWIND: {
 		name: 'Tailwind CSS',
-		color: COLORS.SKY.color
+		color: COLORS.SKY.color,
+		icon: SiTailwindcss
 	},
 	CSHARP: {
 		name: 'C#',
-		color: COLORS.VIOLET.color
+		color: COLORS.VIOLET.color,
+		icon: SiSharp
 	},
 	HTML: {
 		name: 'HTML',
-		color: COLORS.ORANGE.color
+		color: COLORS.ORANGE.color,
+		icon: SiHtml5
 	},
 	JAVASCRIPT: {
 		name: 'JavaScript',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: SiJavascript
 	},
 	FIREBASE: {
 		name: 'Firebase',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: SiFirebase
 	},
 	API: {
 		name: 'API',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: FaCode
 	},
 	API_REST: {
 		name: 'API REST',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: FaCode
 	},
 	PHP: {
 		name: 'PHP',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: SiPhp
 	},
 	JAVA: {
 		name: 'Java',
-		color: COLORS.RED.color
+		color: COLORS.RED.color,
+		icon: FaJava
 	},
 	SQL: {
 		name: 'SQL',
-		color: COLORS.SKY.color
+		color: COLORS.SKY.color,
+		icon: FaDatabase
 	},
 	POSTGRESQL: {
 		name: 'PostgreSQL',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: SiPostgresql
 	},
 	CSS: {
 		name: 'CSS',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: SiCss3
 	},
 	DESKTOP: {
 		name: 'Desarrollo de aplicaciones de escritorio',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaDesktop
 	},
 	WEB: {
 		name: 'Desarrollo de aplicaciones web',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaGlobe
 	},
 	MOVIL: {
 		name: 'Desarrollo de aplicaciones móviles',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaMobile
 	},
 	FOX_PRO: {
 		name: 'Visual FoxPro',
-		color: COLORS.ORANGE.color
+		color: COLORS.ORANGE.color,
+		icon: FaFirefox
 	},
 	POO: {
 		name: 'Programación Orientada a Objetos',
-		color: COLORS.SKY.color
+		color: COLORS.SKY.color,
+		icon: FaCode
 	},
 	READING_ARTICLES: {
 		name: 'Lectura de artículos científicos',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: FaBookReader
 	},
 	WRITING_ARTICLES: {
 		name: 'Redacción de artículos científicos',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: FaPencilAlt
 	},
 	ENGLISH: {
 		name: 'Inglés',
-		color: COLORS.LIME.color
+		color: COLORS.LIME.color,
+		icon: FaLanguage
 	},
 	SPANISH: {
 		name: 'Español',
-		color: COLORS.LIME.color
+		color: COLORS.LIME.color,
+		icon: FaLanguage
 	},
 	B1: {
 		name: 'B1',
-		color: COLORS.PURPLE.color
+		color: COLORS.PURPLE.color,
+		icon: FaUserGraduate
 	},
 	B2: {
 		name: 'B2',
-		color: COLORS.FUCHSIA.color
+		color: COLORS.FUCHSIA.color,
+		icon: FaUserGraduate
 	},
 	B3: {
 		name: 'B3',
-		color: COLORS.PINK.color
+		color: COLORS.PINK.color,
+		icon: FaUserGraduate
 	},
 	BASIC_LEVEL: {
 		name: 'Nivel básico',
-		color: COLORS.PURPLE.color
+		color: COLORS.PURPLE.color,
+		icon: FaUserGraduate
 	},
 	INTERMEDIATE_LEVEL: {
 		name: 'Nivel intermedio',
-		color: COLORS.FUCHSIA.color
+		color: COLORS.FUCHSIA.color,
+		icon: FaUserGraduate
 	},
 	ADVANCED_LEVEL: {
 		name: 'Nivel avanzado',
-		color: COLORS.PINK.color
+		color: COLORS.PINK.color,
+		icon: FaUserGraduate
 	},
 	EXPERT_LEVEL: {
 		name: 'Nivel experto',
-		color: COLORS.ROSE.color
+		color: COLORS.ROSE.color,
+		icon: FaUserGraduate
 	},
 	SOFTWARE_ENGINEER: {
 		name: 'Ingeniero de software',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaCode
 	},
 	FULL_STACK: {
 		name: 'Full-Stack Developer',
-		color: COLORS.INDIGO.color
+		color: COLORS.INDIGO.color,
+		icon: FaCode
 	},
 	LEADERSHIP: {
 		name: 'Liderazgo',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: FaUsers
 	},
 	TEAMWORK: {
 		name: 'Trabajo en equipo',
-		color: COLORS.RED.color
+		color: COLORS.RED.color,
+		icon: FaUsers
 	},
 	PROBLEM_SOLVING: {
 		name: 'Solución de problemas',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaPuzzlePiece
 	},
 	PROACTIVE: {
 		name: 'Proactivo',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaLightbulb
 	},
 	PROGRAMMING: {
 		name: 'Programación',
-		color: COLORS.SKY.color
+		color: COLORS.SKY.color,
+		icon: FaCode
 	},
 	AGILE_METHODOLOGIES: {
 		name: 'Metodologías ágiles',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: GrWorkshop
 	},
 	SPRING_BOOT: {
 		name: 'Spring Boot',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: SiSpringboot
 	},
 	ANGULAR: {
 		name: 'Angular',
-		color: COLORS.RED.color
+		color: COLORS.RED.color,
+		icon: SiAngular
 	},
 	NODE: {
 		name: 'Node',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: SiNodedotjs
 	},
 	WEB_SCRAPING: {
 		name: 'Web Scraping',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaGlobe
 	},
 	PYTHON: {
 		name: 'Python',
-		color: COLORS.YELLOW.color
+		color: COLORS.YELLOW.color,
+		icon: SiPython
 	},
 	SECURITY: {
 		name: 'Seguridad',
-		color: COLORS.RED.color
+		color: COLORS.RED.color,
+		icon: FaShieldAlt
 	},
 	AI: {
 		name: 'Inteligencia artificial',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: FaBrain
 	},
 	YOLO: {
 		name: 'YOLO',
-		color: COLORS.ORANGE.color
+		color: COLORS.ORANGE.color,
+		icon: FaBrain
 	},
 	THESIS: {
 		name: 'Tesis',
-		color: COLORS.PURPLE.color
+		color: COLORS.PURPLE.color,
+		icon: FaGraduationCap
 	},
 	FLUTTER: {
 		name: 'Flutter',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: SiFlutter
 	},
 	DART: {
 		name: 'Dart',
-		color: COLORS.SKY.color
+		color: COLORS.SKY.color,
+		icon: SiDart
 	},
 	ANDROID: {
 		name: 'Android',
-		color: COLORS.GREEN.color
+		color: COLORS.GREEN.color,
+		icon: SiAndroid
 	},
 	FIRESTORE: {
 		name: 'Firestore',
-		color: COLORS.BLUE.color
+		color: COLORS.BLUE.color,
+		icon: FaFire
+	},
+	REACT: {
+		name: 'React',
+		color: COLORS.SKY.color,
+		icon: SiReact
+	},
+	MYSQL: {
+		name: 'MySQL',
+		color: COLORS.BLUE.color,
+		icon: SiMysql
+	},
+	VITE: {
+		name: 'Vite',
+		color: COLORS.YELLOW.color,
+		icon: SiVite
+	},
+	TYPE_SCRIPT: {
+		name: 'TypeScript',
+		color: COLORS.BLUE.color,
+		icon: SiTypescript
+	},
+	IPHONE: {
+		name: 'iPhone',
+		color: COLORS.ROSE.color,
+		icon: SiApple
 	}
 }

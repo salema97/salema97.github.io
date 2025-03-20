@@ -163,6 +163,24 @@ export const DEGREES = [
 
 export const EXPERIENCE = [
 	{
+		date: 'Noviembre 2023 - Actualidad',
+		title: 'Freelance',
+		role: 'Desarrollador de Software',
+		description:
+			'He desarrollado diversos proyectos en varias áreas, incluyendo el desarrollo web utilizando Vite, aplicaciones de comercio electrónico en Flutter y APIs en Node.js que integran estas aplicaciones con bases de datos MySQL. Siguiendo todo el proceso de desarrollo, desde la toma de requisitos hasta el despliegue final de cada proyecto, asegurando su correcta implementación y funcionamiento.',
+		tags: [
+			TAGS.FLUTTER,
+			TAGS.DART,
+			TAGS.NODE,
+			TAGS.API_REST,
+			TAGS.JAVASCRIPT,
+			TAGS.MYSQL,
+			TAGS.REACT,
+			TAGS.VITE,
+			TAGS.TYPE_SCRIPT
+		]
+	},
+	{
 		date: 'Marzo 2022 - Junio 2022',
 		title: 'ADS Software',
 		role: 'Pasante - Desarrollador de Software',
@@ -181,6 +199,35 @@ export const EXPERIENCE = [
 ]
 
 export const PROJECTS = [
+	{
+		title: 'Pagina Web Empresarial',
+		description:
+			'Pagina web empresarial para una empresa de desarrollo de software, con información de la empresa, servicios, portafolio y contacto.',
+		link: 'https://kaizensoftware.com.ec',
+		image: '/projects/Kaizen.webp',
+		tags: [TAGS.VITE, TAGS.REACT, TAGS.TYPE_SCRIPT]
+	},
+	{
+		title: 'Panel administrativo',
+		description:
+			'Panel de administración para la gestión de usuarios, productos y pedidos de una tienda en línea.',
+		image: '/projects/Panel.webp',
+		tags: [TAGS.VITE, TAGS.REACT, TAGS.TYPE_SCRIPT]
+	},
+	{
+		title: 'API - Node.js',
+		description:
+			'API documentada de un sistema que maneja compras de productos de una tienda en línea, con autenticación de usuarios y roles.',
+		image: '/projects/API_Corazon.webp',
+		tags: [TAGS.NODE, TAGS.JAVASCRIPT, TAGS.API_REST]
+	},
+	{
+		title: 'CopyXpress',
+		description:
+			'Aplicación Movil para la tienda en línea CopyXpress, que permite a los usuarios realizar compras de productos de papelería y servicios de impresión.',
+		image: '/projects/CopyXpress.webp',
+		tags: [TAGS.FLUTTER, TAGS.DART, TAGS.ANDROID, TAGS.IPHONE]
+	},
 	{
 		title: 'Re-Identificación de personas',
 		description:

@@ -11,6 +11,7 @@ export interface Props {
 	tags?: {
 		name: string
 		color: string
+		icon?: any
 	}[]
 	link?: string
 }
@@ -42,7 +43,9 @@ const { date, title, role, description, tags, link } = Astro.props
 		<ul class="mb-2 flex flex-wrap gap-x-2 gap-y-2">
 			{tags.map((tags) => (
 				<li>
-					<Badge color={tags.color}>{tags.name}</Badge>
+					<Badge color={tags.color} icon={tags.icon}>
+						{tags.name}
+					</Badge>
 				</li>
 			))}
 		</ul>

@@ -12,7 +12,7 @@ export interface Props {
 	description: string
 	url?: string
 	image: string
-	tags?: { name: string; color: string }[]
+	tags?: { name: string; color: string; icon?: any }[]
 }
 
 const { name, issued, issueDate, expirationDate, credentialId, description, url, image, tags } =
@@ -54,9 +54,11 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 			{
 				tags && (
 					<ul class="mb-2 flex flex-wrap gap-x-2 gap-y-2">
-						{tags.map((tags) => (
+						{tags.map((tag) => (
 							<li>
-								<Badge color={tags.color}>{tags.name}</Badge>
+								<Badge color={tag.color} icon={tag.icon}>
+									{tag.name}
+								</Badge>
 							</li>
 						))}
 					</ul>
