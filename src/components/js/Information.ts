@@ -83,6 +83,31 @@ export const DEGREES = [
 	},
 	{
 		id: 5,
+		name: 'Desarrollador Frontend (React)',
+		issued: 'HackerRank',
+		issueDate: 'Marzo 2025',
+		expirationDate: '',
+		credentialId: 'D702F2BC41AD',
+		url: 'https://www.hackerrank.com/certificates/d702f2bc41ad',
+		description: 'Abarca temas como React, CSS y JavaScript.',
+		image: '/images/FRONTEND_DEVELOPER.webp',
+		tags: [TAGS.REACT, TAGS.CSS, TAGS.JAVASCRIPT]
+	},
+	{
+		id: 6,
+		name: 'SQL (Avanzado)',
+		issued: 'HackerRank',
+		issueDate: 'Marzo 2025',
+		expirationDate: '',
+		credentialId: '217D29E4F83C',
+		url: 'https://www.hackerrank.com/certificates/217d29e4f83c',
+		description:
+			'Abarca temas como optimización de consultas, modelado de datos, indexación, funciones de ventana y pivotes en SQL.',
+		image: '/images/SQL.webp',
+		tags: [TAGS.SQL]
+	},
+	{
+		id: 7,
 		name: 'Angular (Intermedio)',
 		issued: 'HackerRank',
 		issueDate: 'Abril 2024',
@@ -95,7 +120,7 @@ export const DEGREES = [
 		tags: [TAGS.ANGULAR]
 	},
 	{
-		id: 6,
+		id: 8,
 		name: 'JavaScript (Intermedio)',
 		issued: 'HackerRank',
 		issueDate: 'Abril 2024',
@@ -108,8 +133,34 @@ export const DEGREES = [
 		tags: [TAGS.JAVASCRIPT]
 	},
 	{
-		id: 7,
-		name: 'Node (básico)',
+		id: 9,
+		name: 'API Rest (Intermedio)',
+		issued: 'HackerRank',
+		issueDate: 'Mayo 2024',
+		expirationDate: '',
+		credentialId: '20E17EB954D2',
+		url: 'https://www.hackerrank.com/certificates/20e17eb954d2',
+		description:
+			'Abarca temas como obtener datos de una API y procesar usando parámetros o paginación.',
+		image: '/images/API_REST.webp',
+		tags: [TAGS.NODE, TAGS.API, TAGS.API_REST]
+	},
+	{
+		id: 10,
+		name: 'Resolución de Problemas (Intermedio)',
+		issued: 'HackerRank',
+		issueDate: 'Mayo 2024',
+		expirationDate: '',
+		credentialId: '26339B8212F1',
+		url: 'https://www.hackerrank.com/certificates/26339b8212f1',
+		description:
+			'Abarca temas de Estructuras de Datos (como HashMaps, Pilas y Colas) y Algoritmos (como Soluciones Óptimas).',
+		image: '/images/PROBLEM_SOLVING.webp',
+		tags: [TAGS.SQL, TAGS.ALGORITHMS]
+	},
+	{
+		id: 11,
+		name: 'Node (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Abril 2024',
 		expirationDate: '',
@@ -121,7 +172,7 @@ export const DEGREES = [
 		tags: [TAGS.NODE]
 	},
 	{
-		id: 8,
+		id: 12,
 		name: 'Python (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Abril 2024',
@@ -134,7 +185,7 @@ export const DEGREES = [
 		tags: [TAGS.PYTHON]
 	},
 	{
-		id: 9,
+		id: 13,
 		name: 'CSS (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',
@@ -147,7 +198,7 @@ export const DEGREES = [
 		tags: [TAGS.CSS]
 	},
 	{
-		id: 10,
+		id: 14,
 		name: 'C# (Básico)',
 		issued: 'HackerRank',
 		issueDate: 'Marzo 2024',

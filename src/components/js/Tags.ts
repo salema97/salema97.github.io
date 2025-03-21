@@ -387,5 +387,10 @@ export const TAGS = {
 		name: 'iPhone',
 		color: COLORS.ROSE.color,
 		icon: SiApple
+	},
+	ALGORITHMS: {
+		name: 'Algoritmos',
+		color: COLORS.SKY.color,
+		icon: FaBrain
 	}
 }
