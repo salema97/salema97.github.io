@@ -251,6 +251,7 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
 	{
+		id: 1,
 		title: 'Pagina Web Empresarial',
 		description:
 			'Pagina web empresarial para una empresa de desarrollo de software, con información de la empresa, servicios, portafolio y contacto.',
@@ -259,6 +260,7 @@ export const PROJECTS = [
 		tags: [TAGS.VITE, TAGS.REACT, TAGS.TYPE_SCRIPT]
 	},
 	{
+		id: 2,
 		title: 'Panel administrativo',
 		description:
 			'Panel de administración para la gestión de usuarios, productos y pedidos de una tienda en línea.',
@@ -266,6 +268,7 @@ export const PROJECTS = [
 		tags: [TAGS.VITE, TAGS.REACT, TAGS.TYPE_SCRIPT]
 	},
 	{
+		id: 3,
 		title: 'API - Node.js',
 		description:
 			'API documentada de un sistema que maneja compras de productos de una tienda en línea, con autenticación de usuarios y roles.',
@@ -273,6 +276,7 @@ export const PROJECTS = [
 		tags: [TAGS.NODE, TAGS.JAVASCRIPT, TAGS.API_REST]
 	},
 	{
+		id: 4,
 		title: 'CopyXpress',
 		description:
 			'Aplicación Movil para la tienda en línea CopyXpress, que permite a los usuarios realizar compras de productos de papelería y servicios de impresión.',
@@ -280,6 +284,7 @@ export const PROJECTS = [
 		tags: [TAGS.FLUTTER, TAGS.DART, TAGS.ANDROID, TAGS.IPHONE]
 	},
 	{
+		id: 5,
 		title: 'Re-Identificación de personas',
 		description:
 			'Proyecto de tesis para la re-identificación de personas basada en características biométricas y softbiométricas, mediante el uso de arquitecturas de altas prestaciones, CPUs y GPUs.',
@@ -289,6 +294,7 @@ export const PROJECTS = [
 		tags: [TAGS.PYTHON, TAGS.YOLO, TAGS.SECURITY, TAGS.THESIS]
 	},
 	{
+		id: 6,
 		title: 'Consulta de Datos personales',
 		description:
 			'API para la consulta de datos personales de páginas web publicas de entidades del Ecuador mediante WebScraping.',
@@ -298,6 +304,7 @@ export const PROJECTS = [
 		tags: [TAGS.API, TAGS.PYTHON, TAGS.WEB_SCRAPING]
 	},
 	{
+		id: 7,
 		title: 'Practica con SQLMap',
 		description:
 			'Página web para pruebas de vulnerabilidad con SQLMap y otras técnicas de auditoría de seguridad.',
@@ -307,6 +314,7 @@ export const PROJECTS = [
 		tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.SQL, TAGS.SECURITY]
 	},
 	{
+		id: 8,
 		title: 'Sala de Chat',
 		description:
 			'Página web para una sala de chat con Socket.io, esta aplicación web en tiempo real permite a múltiples usuarios comunicarse entre sí en un entorno de chat en vivo.',
@@ -316,6 +324,7 @@ export const PROJECTS = [
 		tags: [TAGS.NODE, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
 	},
 	{
+		id: 9,
 		title: 'Servicio de Fotografía e Ilustración',
 		description: 'Página web estática para la prestación de servicios de fotografía e ilustración.',
 		link: '',
@@ -324,6 +333,7 @@ export const PROJECTS = [
 		tags: [TAGS.NODE, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
 	},
 	{
+		id: 10,
 		title: 'SCAFEL ECommerce',
 		description:
 			'Página web en desarrollo para la tienda de zapatos artesanales tejidos de la marca SCAFEL.',
@@ -333,6 +343,7 @@ export const PROJECTS = [
 		tags: [TAGS.ANGULAR, TAGS.SPRING_BOOT, TAGS.JAVA, TAGS.POSTGRESQL]
 	},
 	{
+		id: 11,
 		title: 'App - Kaizen Novel',
 		description:
 			'Aplicación Movil para lectura y publicación de novelas o de libros, con la opción de elegir el idioma.',
@@ -342,6 +353,7 @@ export const PROJECTS = [
 		tags: [TAGS.FLUTTER, TAGS.DART, TAGS.ANDROID]
 	},
 	{
+		id: 12,
 		title: 'Backend - Kaizen Novel',
 		description: 'Cloud functions para la identificación de las novelas o libros.',
 		link: '',

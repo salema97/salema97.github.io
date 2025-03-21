@@ -1,5 +1,6 @@
 ---
 import DegreeCard from './DegreeCard.astro'
+import Modal from './Modal.astro'
 import SliderControls from './SliderControls.astro'
 import { DEGREES } from './js/Information.ts'
 ---
@@ -30,5 +31,6 @@ import { DEGREES } from './js/Information.ts'
 			))
 		}
 	</div>
+	{DEGREES.map((degrees) => <Modal id={`modal-degree-${degrees.id}`} image={degrees.image} />)}
 	<SliderControls />
 </div>

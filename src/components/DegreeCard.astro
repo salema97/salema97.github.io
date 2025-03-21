@@ -4,6 +4,7 @@ import Badge from './Badge.astro'
 import Button from './Button.astro'
 
 export interface Props {
+	id: number
 	name: string
 	issued: string
 	issueDate: string
@@ -15,8 +16,10 @@ export interface Props {
 	tags?: { name: string; color: string; icon?: any }[]
 }
 
-const { name, issued, issueDate, expirationDate, credentialId, description, url, image, tags } =
+const { id, name, issued, issueDate, expirationDate, credentialId, description, url, image, tags } =
 	Astro.props
+
+const modalId = `modal-degree-${id}`
 ---
 
 <div class="h-full w-full">
@@ -25,11 +28,13 @@ const { name, issued, issueDate, expirationDate, credentialId, description, url,
 	>
 		<div class="h-[500px] overflow-hidden md:h-full md:w-2/5">
 			<img
-				class="h-full w-full border border-b-light-3 object-cover object-top dark:border-b-dark-2 md:rounded-l-lg md:border-r-light-3 md:dark:border-r-dark-2"
+				class="h-full w-full cursor-pointer border border-b-light-3 object-cover object-top dark:border-b-dark-2 md:rounded-l-lg md:border-r-light-3 md:dark:border-r-dark-2"
 				src={image}
 				alt=""
 				loading="eager"
 				decoding="async"
+				data-modal-target={modalId}
+				data-modal-toggle={modalId}
 			/>
 		</div>
 		<div class="flex h-full flex-col p-4 leading-normal md:w-3/5">

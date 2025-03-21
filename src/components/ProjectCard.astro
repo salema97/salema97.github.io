@@ -3,8 +3,10 @@ import GitHubIcon from '../icons/GitHub.astro'
 import ExternalIcon from '../icons/Link.astro'
 import LockIcon from '../icons/LockIcon.astro'
 import Badge from './Badge.astro'
+import Modal from './Modal.astro'
 
 interface Project {
+	id: number
 	title: string
 	description: string
 	link?: string
@@ -23,19 +25,24 @@ if (!PROJECTS) {
 	throw new Error('La propiedad PROJECTS es obligatoria.')
 }
 
-const { title, description, link, github, image, tags } = PROJECTS
+const { id, title, description, link, github, image, tags } = PROJECTS
+
+const modalId = `modal-project-${id}`
 ---
 
 <div
 	class="grid rounded-lg border border-light-3 bg-light-1 shadow dark:border-dark-2 dark:bg-dark-1"
 >
 	<img
-		class="h-[stretch] rounded-t-lg border-b border-light-3 object-cover align-top dark:border-dark-2"
+		class="h-[stretch] cursor-pointer rounded-t-lg border-b border-light-3 object-cover align-top dark:border-dark-2"
 		src={image}
 		alt=""
 		loading="lazy"
 		decoding="async"
+		data-modal-target={modalId}
+		data-modal-toggle={modalId}
 	/>
+	<Modal id={modalId} image={image} />
 	<div class="self-baseline p-4">
 		<h5 class="text-1gray-900 mb-2 text-2xl font-bold tracking-tight dark:text-white">
 			{title}
@@ -63,7 +70,7 @@ const { title, description, link, github, image, tags } = PROJECTS
 					<a
 						href={link}
 						target="_blank"
-						class="flex items-center space-x-1 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-light-4  md:dark:hover:bg-transparent md:dark:hover:text-dark-6"
+						class="flex items-center space-x-1 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-light-4 md:dark:hover:bg-transparent md:dark:hover:text-dark-6"
 					>
 						<span class="mt-1 flex items-center justify-center text-sm font-medium">
 							Visualizar
